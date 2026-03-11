@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1><strong>Verificador de idade 🤔</strong></h1>
+    </header>
+    <section>   
+        <div>
+           <p>Ano de nascimento:
+           <input type="number" name="txtano" id="txtano" min="0" max="2024">
+           </p>
+           <p>Sexo:
+            <input type="radio" name="radsex" id="masc" checked>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+        </p>
+        <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para verificar o resultado!
+        </div>
+    </section>
+    <footer>    
+        <p>Copyright &copy; 2026</p>
+    </footer>
+    <script src="script.js">
+        let imagem = document.createElement('img')
+        imagem.scr = 'imagem.gif'
+        imagem.width = 500
+        document.body.appendChild(imagem)
+    </script>
+</body>
+</html>
